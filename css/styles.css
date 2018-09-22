@@ -1,0 +1,288 @@
+/* CSS FILE ----------------- */
+
+/* Web Fonts ---------------- */
+
+@font-face  { 
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles -------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body  {
+	background-color: #2A2A2A;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2  {
+	font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+h1  {
+	color: #fff;
+	font-size: 2.75em;
+	letter-spacing: .9em;
+	line-height: 2.5em;
+	padding-top: 250px;
+	text-align: center;
+}
+
+h2  {
+	color: #1BE200;
+	font-size: 1.75em;
+	letter-spacing: .1em;
+	margin-bottom: 50px;
+	text-align: center;
+	
+}
+	
+
+img {
+	border-radius: 10px;
+	height: 240px;
+	margin: 0 20px 10px;
+	min-height: 120px;
+	min-width: 210px;
+	max-width: 100%;
+	width: 420px;
+	
+}
+
+p  {
+	color: #fff;
+	
+}
+
+
+li  {
+	color: #fff;
+	list-style-type: square;
+}
+
+span  {
+	border-bottom: 1px solid #fff;
+}
+
+/* Navigation Bar ----------- */
+
+.nav  {
+	background-color: rgba(0, 0, 0, .6);
+	color: #fff;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	
+}
+
+.nav li  {
+	display: inline;
+	float: left;
+}
+
+.nav li a  {
+    color: white;
+	display: inline-block;
+    padding: 14px 16px;
+}
+
+.nav li a:hover  {
+	background-color: #1BE200;
+}
+
+/* Table -------------------- */
+
+table  {
+	border: none;
+	margin-left: 230px;
+}
+
+tbody  {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+tfoot  {
+	background-color: rgba(27, 226, 0, .6);
+}
+
+.table-title  {
+	background-color: rgba(27, 226, 0, .6);
+	padding-right: 10px;
+}
+
+
+/* Pseudo Classes ----------- */
+
+a:link  {
+	color: #1BE200;
+	text-decoration: none;
+}
+
+a:visited  {
+	color: #76E367;
+}
+
+a:hover  {
+	color: #fff;
+}
+
+a:active  {
+	color: #fff;
+}
+
+/*Main Classes -------------- */
+
+.main-header  {
+	background: linear-gradient(#76E367, transparent 90%),
+                linear-gradient(0deg, #fff, transparent),
+				#000 url('../images/wolf header.jpg') no-repeat center;
+	background-size: cover;
+    height:	800px;
+	padding: 20px;
+}
+
+.title  {
+	color: #fff;
+	border-top: 1px solid;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.main-content,
+.secondary-content  {
+	margin: 5% 20%;
+}
+
+.secondary  {
+	margin-bottom: 10%;
+}
+
+.pack-structure,
+.forming-of-a-pack,
+.defending-territory  {
+	margin: 100px;
+}
+
+.pack-structure  {
+	margin-bottom: 50px;
+	
+}
+
+.forming-of-a-pack  {
+	margin-bottom: 50px;
+}
+
+.wild-wolf  {
+	background: #fff url('../images/wild wolf.jpg') no-repeat center;
+	background-size: cover;
+	border-radius: 30px;
+	border-top: 10px solid #1BE200;
+	box-shadow: inset 0px 0px 50px 10px rgba(0,0,0, 1);
+	height: 100%;
+	padding: 5% 10%;
+	text-align: left;
+}
+
+.main-footer  {
+	background-color: #000;
+	bottom: 0;
+	color: #fff;
+	left: 0;
+	margin: 40% 0 0;
+	padding: 20px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+.content-list  {
+	text-align: center;
+}
+
+.wolf-characteristics  {
+	margin-top: 50px;
+}
+
+/* 3D Text ------------------- */
+
+h1,
+.title  {
+	text-shadow: 5px 5px 10px rgba(3, 3, 3, .8);
+}
+
+/* Floats -------------------- */
+
+.img1  {
+	float: right;
+}
+
+.img2  {
+    float: left;
+}
+
+.img3  {
+	float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after  {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Media Queries ------------------- */
+
+@media (max-width: 1040px)  {
+	.main-header  {
+		width:100%
+	}
+    .secondary-content,
+    .wolf-characteristics	{
+		padding: 1% 1%;
+        margin: 0;
+        text-align: center;
+	}
+}
+
+@media (max-width: 768px)  {
+  .main-content,
+  .secondary-content  {
+    width :100%;
+    padding:20px;
+    border-top: none;
+  }
+  .main-header  { 
+    max-height: 380px;
+	right: 0;
+    padding:50px 25px 300px;
+  }
+  .wolf-characteristics  {	
+  }
+  .title  {
+    font-size: 1.3rem;
+    border: none;
+  }
+  h1  {
+    font-size: 2rem;
+    line-height: 1.1; 
+  }
+  .main-footer  {
+    padding: 20px 0;
+  }
+}
